@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Trip Planner</title>
+    <link rel="stylesheet"
+          href=
+"//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href = "{% static 'css/body.css' %}"/>   
+    <link rel="stylesheet" href = "{% static 'css/calendar.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/dropdown.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/generatebutton.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/map.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/overlay.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/searchbox.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/tags.css' %}"/>
+    <link rel="stylesheet" href = "{% static 'css/photos.css' %}"/>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0b8b9f6863.js" crossorigin="anonymous"></script>
+
+    <link rel='shortcut icon' type='image/png' href="{% static 'favicon.ico' %}" />
+
+</head>
+   
+<body>
+    <!-- Add a div for the semi-transparent overlay -->
+    <div class="overlay"></div>
+
+    <div id="logo"> 
+        <img src="{% static 'cs194_logo_3.png' %}" width="230" height="160">
+    </div> 
+
+    <h2 style="color:#864a05"><b>Plan your adventure!</b></h2>
+
+    <!-- <p style="font-weight: 600;">Let's plan your adventure!</p> -->
+    <div class="search-box">
+        <input type="text" id="city-search-box">
+    </div>
+    
+    <div class="date-container">
+        <div class="date-fields">
+            <div class="date-field">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+            </div>
+            <div class="date-field">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+            </div>
+        </div>
+    </div>
+
+    <p style="font-weight: 600;">Enter the location(s) you would like to include in your itinerary.</p>
+
+    <div class="container">
+        <div class="tags-input"> 
+            <ul id="tags"></ul> 
+            <input type="text" id="input-tag" 
+                placeholder="Enter a location" class="location-tags" /> 
+        </div>
+    </div>
+
+    <button id="generateButton" class="button-28" role="button" onclick="generateItinerary()">Generate Itinerary</button>
+
+    <div id="map">
+    </div>
+
+    <div id="photos" class='photosDisabled'>
+        <div id="break">
+            <div id="city-search-box">
+            </div>
+        </div>
+    </div>
+
+    <!-- Drop downs HTML -->
+    <div class="wrapper center-blocke d-none" id="dropdownContainer">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      </div>
+    </div>
+
+    <!-- Google Maps -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key={{gmaps_api_key}}&libraries=places&callback=initMap&v=weekly&loading=async"
+        async defer>
+    </script>
+
+    <script>
+        logoURL = "{% static 'car-icon.png' %}";
+    </script>
+
+    <script src="{% static 'js/dropdown.js' %}"></script>
+    <script src="{% static 'js/generate.js' %}"></script>
+    <script src="{% static 'js/tags.js' %}"></script>
+    <script src="{% static 'js/map.js' %}"></script>
+    <script src="{% static 'js/photos.js' %}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <script src="{% static 'js/autocomplete.js' %}"></script>
+
+
+</body>

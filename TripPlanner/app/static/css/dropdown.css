@@ -1,0 +1,98 @@
+.wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:50%;
+}
+@media(max-width:992px){
+    .wrapper{
+        width:70%;
+    } 
+}
+.panel-heading {
+    padding: 0;
+    border: 2px solid #864a05; /* Set border color and thickness */
+    border-radius: 10px; /* Add rounded corners for a fancy look */
+    outline: none; /* Remove default input outline */
+    transition: border-color 0.3s; /* Add transition for a smooth effect */
+    background:#ffffff;
+}
+.panel-title>a, .panel-title>a:active{
+    display:block;
+    padding:15px;
+    color:#4f4646;
+    font-family: 'Gill Sans';
+    font-size:16px;
+    font-weight:bold;
+    /* text-transform:uppercase; */
+    letter-spacing:1px;
+    word-spacing:3px;
+    text-decoration:none;
+}
+.panel-heading  a:before {
+    font-family: 'Gill Sans';
+    content: "▲";
+    float: right;
+    transition: all 0.5s;
+}
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.panel-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.panel-body {
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.loc-name {
+    background-color: #f8f1e9; /* Background color of the box */
+    font-family: 'Gill Sans';
+    padding: 16px; /* Padding around the text inside the box */
+    border-radius: 7px; /* Rounded corners for the box */
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+}
+
+.route-info {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#locationName {
+    font-family: 'Gill Sans';
+}
+
+#dottedLine {
+    border-left: 3px dotted #000000;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding-right: 15px;
+    vertical-align: 20px;
+}
+
+#time {
+    font-size: 80%;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+#car-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdownPanel {
+    margin-bottom: 18px;
+}

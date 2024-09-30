@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gill Sans';
+    margin: 20px;
+
+    /* Set the background image  */
+    background-image: url('background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+#logo{ 
+    top:10px; 
+    left:0; 
+} 

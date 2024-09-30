@@ -1,0 +1,15 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(254, 251, 242); /* Adjust the alpha value for the desired level of transparency */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+.content {
+    color: #ffffff; /* Adjust the text color to be visible against the overlay */
+    text-align: center;
+    padding: 20px;
+}

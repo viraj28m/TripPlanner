@@ -1,0 +1,60 @@
+#start-date {
+    font-family: 'Gill Sans';
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 2px solid #864a05; /* Set border color and thickness */
+    border-radius: 10px; /* Add rounded corners for a fancy look */
+    outline: none; /* Remove default input outline */
+    transition: border-color 0.3s; /* Add transition for a smooth effect */
+}
+
+/* Style for the date input on focus (when clicked) */
+#start-date:focus {
+    border-color: #e73c6d; /* Change border color on focus */
+}
+
+#end-date {
+    font-family: 'Gill Sans';
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 2px solid #864a05; /* Set border color and thickness */
+    border-radius: 10px; /* Add rounded corners for a fancy look */
+    outline: none; /* Remove default input outline */
+    transition: border-color 0.3s; /* Add transition for a smooth effect */
+}
+
+/* Style for the date input on focus (when clicked) */
+#end-date:focus {
+    border-color: #e73c6d; /* Change border color on focus */
+}
+
+input[type="date"] {
+    font-family: 'Gill Sans';
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.date-container {
+    font-family: 'Gill Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date-fields {
+    font-family: 'Gill Sans';
+    display: flex;
+}
+.date-field {
+    font-family: 'Gill Sans';
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date-field label {
+    font-family: 'Gill Sans';
+    margin-bottom: 5px;
+}
+.date-field input[type="date"] {
+    font-family: 'Gill Sans';
+    width: 150px; 
+}

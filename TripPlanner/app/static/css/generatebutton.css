@@ -1,0 +1,36 @@
+.button-28 {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #464646;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Gill Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    touch-action: manipulation;
+    width: 15%;
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 2px solid #864a05;/* #3498db; /* Set border color and thickness */
+    border-radius: 10px; /* Add rounded corners for a fancy look */
+    transition: border-color 0.3s; /* Add transition for a smooth effect */
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #e2bc91;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
